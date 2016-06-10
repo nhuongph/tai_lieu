@@ -1,0 +1,10 @@
+dán nhanh vào command:
+	Ctrl + Shift + V
+
+Mở command khác trong command:
+	Ctrl + Shift + T
+
+chạy lại migrate và seed(data tạo sẵn)
+	php artisan migrate:refresh --seed
+
+

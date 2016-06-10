@@ -1,0 +1,11 @@
+Auth cho cac route:
+	tao group;
+	https://laravel.com/docs/5.2/routing#route-groups
+	Route::group(['middleware' => 'auth'], function () {
+	    //Route::get('/update/{username}', ['uses' => 'UserController@getUpdate', 'as' => 'getUpdate']);
+	});
+
+****Chu y: cac route nhu login thi khong de trong group: khi goi route login nghia la chua Auth neu de trong group se gap loi "too many redirect"
+
+https://github.com/rappasoft/laravel-5-boilerplate
+https://github.com/unicodeveloper/laravel-hackathon-starter

@@ -1,0 +1,23 @@
+create virtual host
+Step 1: cai dat apache
+		$ sudo apt-get update
+		$ sudo apt-get install apache2
+Step 2: tao file 
+		$ cd /etc/apache2/sites-available/
+		$ sudo cp money.local.conf  site1.example.com.conf
+Step 3: mo file
+		$ 	nano site1.example.conf
+	them noi dung
+		ServerAdmin admin@money.local
+		ServerName money.local
+		ServerAlias www.money.local
+		DocumentRoot /var/www/html/example/public
+Step 4: mo file host: etc/hosts: sudo subl hosts
+		add
+		127.0.0.1	foody.local
+Step 5: Enable First Virtual Host
+		$ a2ensite site1.example.com
+		or
+		$ 	service apache2 reload	
+Step 6:
+		sudo systemctl restart apache2
